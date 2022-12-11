@@ -61,6 +61,11 @@ let map;
             displayUpdate(unicorn.Name + ' has arrived. Giddy up!', unicorn.Color);
             WildRydes.map.unsetLocation();
 
+            // TIP SYSTEM
+            if (window.confirm('To tip your unicorn hit "ok", otherwise hit "cancel"')) {
+                window.location.href='/tip.html'
+            }
+
             $('#request').prop('disabled', 'disabled');
             $('#request').text('Set Pickup');
         });

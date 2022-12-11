@@ -50,8 +50,10 @@
 
         <script src="js/vendor/bootstrap.min.js"></script>
         <script>
-            $('#tipForm').submit(() => {
-                window.location.href='ride.html'
+            $(function onDocReady() {
+                $('#tipForm').submit(() => {
+                    window.location.href='ride.html'
+                })
             })
         </script>
     </body>

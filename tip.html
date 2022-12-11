@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="/css/message.css">
         <style>
-            #unicorn {
+            #tipForm {
                 text-align: center;
             }
         </style>
@@ -38,7 +38,7 @@
                     <option value="shadowfox">Shadowfox</option>
                     <option value="rocinante">Rocinante</option>
                 </select>
-              <input type="number" id="emailInputRegister" placeholder="Number of treats" pattern=".*" required>
+              <input type="number" id="tipAmount" placeholder="0">
 
               <input type="submit" value="Leave Tip!">
             </form>
@@ -46,7 +46,9 @@
 
         <script src="js/vendor/bootstrap.min.js"></script>
         <script>
-
+            $('#tipForm').submit(() => {
+                window.location.href='/ride.html'
+            })
         </script>
     </body>
 </html>

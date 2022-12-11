@@ -44,15 +44,15 @@
                 </select>
               <input type="number" id="tipAmount" placeholder="0">
 
-              <input type="submit" value="Leave Tip!">
+              <input type="submit" value="Leave Tip!" onclick="handleSumbit">
             </form>
         </section>
 
         <script src="js/vendor/bootstrap.min.js"></script>
         <script>
-            $(document).on("submit","form", () => {
-                window.location.href='ride.html'
-            })
+            function handleSumbit() {
+                window.location.href = 'ride.html'
+            }
         </script>
     </body>
 </html>
